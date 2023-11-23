@@ -1,0 +1,19 @@
+// We want 1,2,3,4,5 should be printed after 1,2,3,4,5 seconds which we have done in line no 13.
+
+function timer() {
+     console.log("Hello ninjas!");
+    let time =0;
+  for (let i = 1; i <= 5; i++) {
+       
+    setTimeout(
+      function () {
+        //Write your code here...
+          console.log(i);
+      }, 
+        time+=1000
+    );
+   
+  }
+
+}
+timer(); 
